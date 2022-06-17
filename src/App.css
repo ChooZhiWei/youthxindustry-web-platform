@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+    color: rgb(1, 1, 59);
+}
+
+.search {
+    width: 30%;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navBarButton button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.button {
+    
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.oppoTable {
+    width: 79%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-right: 2%;
+    margin-left: auto;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.oppoTable  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.oppoTable tr:hover {
+    background-color: #edead5;
+
+}
+.oppoTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #DAA520;
+    color: white;
+
+}
+
+
+
+.sidenav {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 164px;
+    left: 2%;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+parent {
+    width: 100%;
+    height: 90px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.child {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    
+}
+.bar-container {
+    background-color: #f1f1f1;
+    color: white;
+    display: inline-block;
+}
+
+/* Individual bars */
+.bar-5 {
+    
+    height: 18px;
+    background-color: #04AA6D;
+    display: inline-block;
+
+}
+.middlee {
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+
+}
+.containerBack {
+    width: 50%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+.bar5 {
+    width: 90%;
+    height: 18px;
+    background-color: #04AA6D;
+}
+.bar4 {
+    width: 60%;
+    height: 18px;
+    background-color: #2196F3;
+}
+.bar3 {
+    width: 50%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+.bar2 {
+    width: 20%;
+    height: 18px;
+    background-color: #ff9800;
+}
+.bar1 {
+    width: 80%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+
+
+.right {
+    text-align: right;
+    padding-right:10px;
+}
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.AlignLeft {
+    left: 2%;
+    z-index: 1;
+    position: fixed;
+    align-items: flex-start;
+    top: 164px;
+}
+
+.AlignRight {
+    left: 80%;
+}
+
+div.borderYtoX a:before, div.borderYtoX a:after {
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before {
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+div.containerNavBar {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 2em 3em;
+    text-align: center;
+}
+
+    div.containerNavBar a {
+        color: black;
+        text-decoration: none;
+        font: 20px Raleway;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+    }
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+.testingSubmit {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: 'Rubik', sans-serif;
+
+
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #fffdf0;
+    border: 2px solid #b0a984;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+}
+    .testingSubmit::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #faf0c5;
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px #b0a984, 0 0.625em 0 0 #fffae3;
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+    .testingSubmit:hover {
+        background: #fffce8;
+        transform: translate(0, 0.25em);
+    }
+        .testingSubmit:hover::before {
+            box-shadow: 0 0 0 2px #b0a984, 0 0.5em 0 0 #fffae3;
+            transform: translate3d(0, 0.5em, -1em);
+        }
+    
+    .testingSubmit:active {
+        background: #fffce8;
+        transform: translate(0em, 0.75em);
+    }
+        .testingSubmit:active::before {
+            box-shadow: 0 0 0 2px #b0a984, 0 0 #fffae3;
+            transform: translate3d(0, 0, -1em);
+        }
+.oppoNFavTitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
