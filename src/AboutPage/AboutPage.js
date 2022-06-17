@@ -26,7 +26,7 @@ function AboutPage() {
                 <div style={{ padding: '10px 20px', textAlign: 'left' }}>
                     <h2>Our Mission</h2>
 
-                    <p>We are here to complete the prototype</p>
+                    <p>We are here to complete the prototype test</p>
                 </div>
 
                 <div style={{ padding: '10px 20px', textAlign: 'center' }}>
